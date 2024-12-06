@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:id="@+id/cardview_id"
+    android:background="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- City Name and Fetched Time in the same row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <!-- City Name -->
+            <TextView
+                android:id="@+id/tv_city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location: None"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+                android:textColor="@android:color/black"/>
+
+            <!-- Fetched Time -->
+            <TextView
+                android:id="@+id/tv_fetched_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fetched: None"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="end"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+        <!-- Separator line-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Weather Description -->
+        <TextView
+            android:id="@+id/tv_weather_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Description: None"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <!-- Temperature -->
+        <TextView
+            android:id="@+id/tv_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Temperature: None"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+        <!-- Additional Info (e.g., Humidity, Wind Speed) -->
+        <TextView
+            android:id="@+id/tv_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Humidity: None"
+            android:textSize="14sp"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/tv_wind_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wind Speed: None"
+            android:textSize="14sp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
